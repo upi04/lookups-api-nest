@@ -27,13 +27,10 @@ Example JSON:
   "password": "rahasia123"
 }
 ```
-🌍 2. Core Resources (CRUD APIs)
+##🌍 2. Core Resources (CRUD APIs)
 You have implemented and tested CRUD for:
-
 ✅ /countries
-
 ✅ /devices
-
 ✅ /educational-institution
 Each resource supports:
 GET all (with pagination & search
@@ -42,20 +39,20 @@ POST (create new)
 PUT (update)
 DELETE (remove)
 
-🧠 3. Validation with DTOs
+##🧠 3. Validation with DTOs
 All input data is validated using class-validator.
 This ensures things like:
 Required fields (@IsNotEmpty())
 Proper formats (@IsEmail(), @Length(), etc.)
 
-📄 4. Swagger Documentation
+##📄 4. Swagger Documentation
 You can view and test all endpoints from your browser:
 👉 http://localhost:3000/api
 Includes:
 Route descriptions
 Required parameters
 Example requests/responses
-🔄 5. Pagination & Search
+##🔄 5. Pagination & Search
 Pagination and filtering are supported on all GET endpoints.
 Example query:
 pgsql
@@ -63,7 +60,7 @@ Copy
 Edit
 GET /countries?page=1&limit=10&search=indonesia
 This keeps the API scalable with large datasets.
-📝 6. Database & Prisma
+##📝 6. Database & Prisma
 Prisma schema defines:
 Country
 Device
@@ -73,7 +70,7 @@ Proper foreign key relationships are implemented
 prisma migrate used to generate and apply migrations
 Prisma Client is used for all DB operations in services
 
-📁 7. Project Structure
+##📁 7. Project Structure
 Follows NestJS best practices:
 css
 Copy
@@ -87,7 +84,7 @@ src/
 ├── app.module.ts
 ├── main.ts
 
-🧪 8. Testing
+##🧪 8. Testing
 Tested thoroughly using Postman:
 ✅ Register & Login
 ✅ Protected Routes (with JWT)
@@ -95,7 +92,7 @@ Tested thoroughly using Postman:
 ✅ Pagination & Filtering
 You can use seed data or POST requests to populate the database.
 
-📦 9. Final Submission Package
+##📦 9. Final Submission Package
 Include the following in your zipped project:
 ✅ src/ folder (source code)
 ✅ prisma/ folder (schema + migrations)
